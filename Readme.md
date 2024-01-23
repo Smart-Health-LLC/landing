@@ -1,8 +1,13 @@
 # Setup
 
 ```bash
-npm install
 git config core.hooksPath .husky
+npm install -g pnpm
+npm install
+```
+
+```bash
+pnpm dev
 ```
 
 # Deploy to production
@@ -13,6 +18,7 @@ npm run start
 ```
 
 # Optimized production build with
+
 ```bash
 npm run build-prod
 ```

@@ -52,6 +52,7 @@
     "prettier": "^3.1.1",
     "rimraf": "^5.0.5",
     "tailwindcss": "^3.4.1",
+    "tsc-files": "^1.1.4",
     "typescript": "^5.3.3"
   },
   "license": "ISC"

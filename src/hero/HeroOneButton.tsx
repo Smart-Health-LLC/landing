@@ -3,7 +3,7 @@ import type { ReactNode } from 'react';
 type IHeroOneButtonProps = {
   title: ReactNode;
   description: string;
-  button: ReactNode;
+  button?: ReactNode;
 };
 
 const HeroOneButton = (props: IHeroOneButtonProps) => (

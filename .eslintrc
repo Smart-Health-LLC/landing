@@ -6,6 +6,11 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
+    // to let daisyUI be included in tailwind config safely
+    "import/no-extraneous-dependencies": [
+          "error",
+          {"devDependencies": true}
+        ],
     "prettier/prettier": [
       "error",
       {

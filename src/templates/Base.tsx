@@ -1,8 +1,8 @@
-import MobileFeatures from '@/mobile/MobileFeatures';
+import MobileFeatures from '@/sections/mobile/MobileFeatures';
 
-import Footer from '../footer/Footer';
-import Hero from '../hero/Hero';
 import { Meta } from '../layout/Meta';
+import Footer from '../sections/footer/Footer';
+import Hero from '../sections/hero/Hero';
 import { AppConfig } from '../utils/AppConfig';
 
 const Base = () => (

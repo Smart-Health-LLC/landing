@@ -5,12 +5,8 @@
     "next/core-web-vitals", // Needed to avoid warning in next.js build: 'The Next.js plugin was not detected in your ESLint configuration'
     "plugin:prettier/recommended"
   ],
+  "root": true,
   "rules": {
-    // to let daisyUI be included in tailwind config safely
-    "import/no-extraneous-dependencies": [
-          "error",
-          {"devDependencies": true}
-        ],
     "prettier/prettier": [
       "error",
       {
@@ -39,6 +35,11 @@
         "project": "./tsconfig.json"
       },
       "rules": {
+        // disable error on importing dev dependencies
+        "import/no-extraneous-dependencies": [
+          "error",
+          {"devDependencies": true}
+        ],
         "prettier/prettier": [
           "error",
           {

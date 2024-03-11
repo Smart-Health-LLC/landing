@@ -1,0 +1,17 @@
+/*=============== CASE ===============*/
+.case{
+    &__container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__img{
+        position: absolute;
+        left: -7rem;
+    }
+    &__description{
+        margin-bottom: var(--mb-1-5);
+        line-height: var(--text-line-height);
+    }
+}

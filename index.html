@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/imgs/pit-logo/pit logo-02.svg" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/scss/styles.css">
+
+        <title>Ассистент сна</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/imgs/pit-logo/pit logo-02.svg" alt="">
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#specs" class="nav__link">Приложение</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#case" class="nav__link">Для компаний</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--=============== HOME ===============-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div>
+                        <img src="assets/imgs/image_2024-03-11_02-51-24.png" alt="" class="home__img">
+                    </div>
+                    
+                    <div class="home__data">
+                        <div class="home__header">
+                            <h1 class="home__title">Полисон</h1>
+                            <h2 class="home__subtitle">Вместе с  <img class="home__subtitle__logo" src="assets/imgs/pit-logo/pit logo-02.svg" height="50px" alt=""></h2>
+                        </div>
+
+                        <div class="home__footer">
+                            <h3 class="home__title-description">Полифазный сон?</h3>
+                            <p class="home__description">Распределение длительного ночного сна на более короткие промежутки в течение дня освободит ощутимое количество времени, позволив вам достигать своих целей быстрее. Pit сделает переход на новый режим сна легче и правильно адаптирует его под изменяющиеся планы</p>
+                            <a href="#" class="button button--flex">
+                                <span class="button--flex">
+                                    <i class="ri-code-s-slash-fill button__icon"></i></i><div class="text">В активной разработке</div> 
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--=============== SPACER ===============-->
+            <section class="section">
+                <div class="container"></div>
+            </section>
+
+            <!--=============== APP MOBILE ===============-->
+            <section class="specs section grid" id="specs">
+                <h2 class="section__title section__title-gradient">Приложение</h2>
+
+                <div class="specs__container container grid">
+                    <div class="specs__content grid">
+                        <div class="specs__data">
+                            <i class="ri-bluetooth-line specs__icon"></i>
+                            <h3 class="specs__title">Connection</h3>
+                            <span class="specs__subtitle">Bluetooth v5.2</span>
+                        </div>
+    
+                        <div class="specs__data">
+                            <i class="ri-battery-charge-line specs__icon"></i>
+                            <h3 class="specs__title">Battery</h3>
+                            <span class="specs__subtitle">Duration 40h</span>
+                        </div>
+    
+                        <div class="specs__data">
+                            <i class="ri-plug-line specs__icon"></i>
+                            <h3 class="specs__title">Load</h3>
+                            <span class="specs__subtitle">Fast charge 4.2-AAC</span>
+                        </div>
+    
+                        <div class="specs__data">
+                            <i class="ri-mic-line specs__icon"></i>
+                            <h3 class="specs__title">Microphone</h3>
+                            <span class="specs__subtitle">Supports Apple Siri <br> and Google</span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img src="assets/imgs/01-Free-iPhone-15-Pro-Mockup.png" alt="" class="specs__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== APP DESKTOP ===============-->
+            <section class="case section grid" id="case">
+                <h2 class="section__title section__title-gradient">Панель для<br>компаний</h2>
+
+                <div class="case__container container grid">
+                    <div class="case__data">
+                        <p class="case__description">Имейте в распоряжении статистику времени бодрствования и сна сотрудников и формируйте график работы сотрудников, раскрывая их максимальную продуктивность</p>
+                        <a href="#" class="button button--flex">
+                            <i class="ri-information-line button__icon"></i> Подробнее
+                        </a>
+                    </div>
+
+                    <div class="pos-r reveal-top">
+                        <div class="backlight"></div>
+                        <img src="assets/imgs/MacBook_Air_MockupsForFree.png" alt="" class="case__img ">
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== DISCOUNT ===============-->
+            <section class="discount section">
+                <div class="discount__container container grid">
+                    <div class="discount__animate">
+                        <h2 class="discount__title">Immerse yourself in <br> your music</h2>
+                        <p class="discount__description">Get it now, up to 50% off.</p>
+                        <a href="#" class="button button--flex">
+                            <i class="ri-shopping-bag-line button__icon"></i> Shop Now
+                        </a>
+                    </div>
+
+                    <img src="assets/img/discount.png" alt="" class="discount__img">
+                </div>
+            </section>
+
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer section">
+            <div class="footer__container container">
+                <a href="#" class="footer__logo">
+                    <img src="assets/imgs/smart-health-logo/smartlife_under_label_transparent_Lableless copy 2.svg" height="150px" alt="">
+                    <div class="footer__link link-disabled">Взламываем сон с 2023 года</div>
+                </a>
+    
+                <div class="footer__content">
+                    <h3 class="footer__title">Юр лицо</h3>
+    
+                    <ul class="footer__links">
+                        <table>
+                            <tr>
+                                <td>ИНН</td>
+                                <td>234234234324</td>
+                            </tr>
+                            <tr>
+                                <td>ОГРН</td>
+                                <td>234234324</td>
+                            </tr>
+                        </table>
+                    </ul>
+                </div>
+    
+                <div class="footer__content">
+                    <h3 class="footer__title">Контакты</h3>
+    
+                    <ul class="footer__links">
+                        <table>
+                            <tr>
+                                <td>Телефон</td>
+                                <td>8 (964) 127-49-37</td>
+                            </tr>
+                            <tr>
+                                <td>Почта</td>
+                                <td>smart-health@gmail.com</td>
+                            </tr>
+                        </table>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__copy">
+                <a href="javascript:void()" target="_blank" class="footer__copy-link link-disabled">&#169; ООО Умные решения. Права защищены.</a>
+            </p>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-s-line scrollup__icon"></i>
+        </a>
+        
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

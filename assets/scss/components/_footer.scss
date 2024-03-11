@@ -1,0 +1,49 @@
+/*=============== FOOTER ===============*/
+.footer{
+    &__container{
+        display: flex;
+        flex-direction: row;
+        gap: 60px 30px;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+    }
+
+    &__content {
+        flex-grow: 5;
+    }
+
+    &__logo{
+        flex-grow: 2;
+    }
+
+    &__title{
+        font-size: var(--h3-font-size);
+        font-weight: var(--font-medium);
+        margin-bottom: var(--mb-1);
+    }
+    &__links{
+        display: flex;
+        flex-direction: column;
+        row-gap: .5rem;
+    }
+    &__link{
+        color: var(--text-color);
+
+        &:hover{
+            color: var(--white-color);
+        }
+    }
+
+
+    &__copy{
+        margin-top: 5rem;
+        text-align: center;
+
+        &-link{
+            font-size: var(--smaller-font-size);
+            color: var(--text-color-light);
+        }
+    }
+}

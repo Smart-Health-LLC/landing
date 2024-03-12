@@ -105,6 +105,10 @@ img {
           user-select: none;
 }
 
+main {
+  padding-bottom: 5rem;
+}
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding: 4rem 0 2rem;
@@ -394,6 +398,9 @@ img {
 }
 .footer__links table {
   border-spacing: 0 15px;
+}
+.footer__links__category {
+  color: lightcoral;
 }
 .footer__link {
   color: var(--text-color);

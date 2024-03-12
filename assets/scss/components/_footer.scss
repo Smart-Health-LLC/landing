@@ -31,6 +31,10 @@
         table {
             border-spacing: 0 15px;
         }
+
+        &__category{
+            color: lightcoral;
+        }
     }
     &__link{
         color: var(--text-color);

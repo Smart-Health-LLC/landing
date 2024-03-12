@@ -27,6 +27,10 @@
         display: flex;
         flex-direction: column;
         row-gap: .5rem;
+
+        table {
+            border-spacing: 0 15px;
+        }
     }
     &__link{
         color: var(--text-color);

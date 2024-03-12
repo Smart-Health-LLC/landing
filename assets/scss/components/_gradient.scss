@@ -4,12 +4,11 @@
       content: "";
       top: $y;
       left: $x;
-      right: 0;
       z-index: -1;
       height: 100%;
       width: 100%;
       margin: 0 auto;
-      transform: scale($size);
+      transform: scale($size) translate(-50%, -50%);
       -webkit-filter: blur($spread);
       -moz-filter: blur($spread);
       -ms-filter: blur($spread);
@@ -31,11 +30,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 105%;
-    height: 100%;
+    width: 79%;
+    height: 94%;
     background-color: #151823;
     animation: textColor 10s ease infinite;
-    @include backlight(0, 5vw, 5vw, 0.75, #0fffc1, #7e0fff, 10s);
+    @include backlight(50%, 50%, 5vw, 1, #0fffc1, #7e0fff, 10s);
       
     @keyframes textColor {
       0% {

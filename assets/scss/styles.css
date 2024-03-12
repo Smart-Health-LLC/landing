@@ -350,6 +350,8 @@ img {
   left: -7rem;
 }
 .case__description {
+  width: 70%;
+  text-align: center;
   margin-bottom: var(--mb-1-5);
   line-height: var(--text-line-height);
 }

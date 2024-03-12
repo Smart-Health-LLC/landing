@@ -3,17 +3,12 @@
     padding: 4rem 0 2rem;
 
     &__title{
+        font-weight: 800;
         font-size: var(--bigger-font-size);
         text-align: center;
         margin-bottom: var(--mb-2-5);
         line-height: 1;
-
-        &-gradient{
-            background: var(--text-gradient);
-            color: transparent;
-            -webkit-background-clip: text;
-            background-clip: text;
-        }
+        @include text-gradient(13s, hsl(var(--hue-color), 4%, 38%), hsl(var(--hue-color), 4%, 19%), left)
     }
 }
 
@@ -34,4 +29,12 @@
 
 .pos-r{
     position: relative;
+}
+
+.pl-5{
+    padding-left: 5px;
+}
+
+.pr-10{
+    padding-right: 10px;
 }

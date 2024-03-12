@@ -1,0 +1,48 @@
+@mixin text-gradient($duration, $color1, $color2, $direction){
+    color: #8d7d7d;
+    background: -webkit-linear-gradient($direction, $color1, $color2, $color1);
+    background-size: 1600px 200px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-duration: $duration;
+    animation-name: animationgradienttitle;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+
+    @keyframes animationgradienttitle {
+        0% {
+            background-position: 0 1600px;
+        }
+        100% {
+            background-position: 1600px 0;
+        }
+    }
+}
+
+@mixin backlight($x, $y, $spread, $size, $colorA, $colorB, $duration) {
+    &:after {
+      position: absolute;
+      content: "";
+      top: $y;
+      left: $x;
+      z-index: -1;
+      height: 100%;
+      width: 100%;
+      margin: 0 auto;
+      transform: scale($size) translate(-50%, -50%);
+      -webkit-filter: blur($spread);
+      -moz-filter: blur($spread);
+      -ms-filter: blur($spread);
+      filter: blur($spread);
+      background: linear-gradient(270deg, $colorA, $colorB);
+      background-size: 200% 200%;
+      animation: animateGlow $duration ease infinite;
+      
+      @keyframes animateGlow {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+      }
+    }
+  }

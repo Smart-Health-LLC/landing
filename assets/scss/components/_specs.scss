@@ -1,7 +1,11 @@
 /*=============== SPECS ===============*/
 .specs{
     &__container{
+        gap: 0 10px;
         position: relative;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
     }
     &__content{
         row-gap: 1.5rem;
@@ -27,8 +31,6 @@
     }
     &__img{
         width: 250px;
-        position: absolute;
-        top: 2rem;
-        right: -4rem;
+        position: initial;
     }
 }

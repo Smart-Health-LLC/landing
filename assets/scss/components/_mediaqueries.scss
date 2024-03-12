@@ -28,16 +28,7 @@
         }
     }
 
-    .specs__img{
-        width: 200px;
-    }
-
     .case{
-        &__img{
-            width: 220px;
-            top: -2rem;
-            left: -9rem;
-        }
         &__data{
             padding: 0;
         }
@@ -47,6 +38,19 @@
         grid-template-columns: 142px;
         justify-content: center;
     }
+}
+/* Beetween medium and small */
+@media screen and (min-width: 340px) and (max-width: 576px){
+   .home{
+        &__img{
+            filter: brightness(0.8);
+        }
+
+        &__title{
+            top: -3.5rem;
+            font-size: var(--bigger-font-size);
+        }
+   } 
 }
 
 /* For medium devices */
@@ -62,19 +66,12 @@
             top: -1rem;
             left: 0;
         }
-    }
-
-    .specs{
-        &__img{
-            position: initial;
-        }
-        &__container{
-            grid-template-columns: repeat(2, 1fr);
-            justify-items: center;
-            align-items: center;
+        &__title{
+            left: -3rem
         }
     }
 
+    
     .case{
         &__img{
             position: initial;
@@ -216,7 +213,7 @@
         }
         &__title{
             top: -5rem;
-            left: 3.5rem;
+            left: 3.1rem;
         }
         &__description{
             padding-right: 5rem;

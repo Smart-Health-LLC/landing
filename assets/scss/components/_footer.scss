@@ -16,6 +16,15 @@
 
     &__logo{
         flex-grow: 2;
+        
+        &__label {
+            font-family: "Concert One", sans-serif;
+            font-size: 43px;
+        }
+
+        img{
+            height: 70px;
+        }
     }
 
     &__title{
@@ -29,10 +38,11 @@
         row-gap: .5rem;
 
         table {
-            border-spacing: 0 15px;
+            border-spacing: 0px 15px;
         }
 
         &__category{
+            padding-left: 2px;
             color: lightcoral;
         }
     }
@@ -54,4 +64,12 @@
             color: var(--text-color-light);
         }
     }
+}
+
+.color-blue-logo {
+    color: #006FAD;
+}
+
+.color-red-logo {
+    color: #F22F0F;
 }

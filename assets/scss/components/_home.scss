@@ -20,15 +20,14 @@
         position: relative;
     }
     &__title{
+        @include text-gradient(11s, hsl(var(--hue-color), 4%, 38%), hsl(var(--hue-color), 4%, 14%), left);
+        font-weight: 800;
         position: absolute;
         top: -4rem;
         left: 1rem;
         line-height: 6rem;
         font-size: var(--biggest-font-size);
-        background: var(--text-gradient);
         color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text;
     }
     &__subtitle{
         font-size: var(--big-font-size);

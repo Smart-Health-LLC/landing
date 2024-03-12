@@ -1,50 +1,23 @@
-@mixin backlight($x, $y, $spread, $size, $colorA, $colorB, $duration) {
-    &:after {
-      position: absolute;
-      content: "";
-      top: $y;
-      left: $x;
-      z-index: -1;
-      height: 100%;
-      width: 100%;
-      margin: 0 auto;
-      transform: scale($size) translate(-50%, -50%);
-      -webkit-filter: blur($spread);
-      -moz-filter: blur($spread);
-      -ms-filter: blur($spread);
-      filter: blur($spread);
-      background: linear-gradient(270deg, $colorA, $colorB);
-      background-size: 200% 200%;
-      animation: animateGlow $duration ease infinite;
-      
-      @keyframes animateGlow {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-      }
+.backlight {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 79%;
+  height: 94%;
+  background-color: #151823;
+  animation: textColor 10s ease infinite;
+  @include backlight(50%, 50%, 5vw, 1, #0fffc1, #7e0fff, 10s);
+    
+  @keyframes textColor {
+    0% {
+      color: #7e0fff;
+    }
+    50% {
+      color: #0fffc1;
+    }
+    100% {
+      color: #7e0fff;
     }
   }
-  
-  .backlight {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 79%;
-    height: 94%;
-    background-color: #151823;
-    animation: textColor 10s ease infinite;
-    @include backlight(50%, 50%, 5vw, 1, #0fffc1, #7e0fff, 10s);
-      
-    @keyframes textColor {
-      0% {
-        color: #7e0fff;
-      }
-      50% {
-        color: #0fffc1;
-      }
-      100% {
-        color: #7e0fff;
-      }
-    }
-  }
+}

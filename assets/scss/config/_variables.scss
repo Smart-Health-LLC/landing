@@ -1,10 +1,10 @@
 /*=============== GOOGLE FONTS ===============*/
-// @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400..600&display=swap');
-// TODO change smart health icon font
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
+$gradient-color-1: #adb1b481;
+$gradient-color-2: #525252cc;
 :root{
     --header-height: 3rem;
     
@@ -19,7 +19,6 @@
     --white-color: #FFF;
     --body-color: hsl(var(--hue-color), 4%, 6%);
     --container-color: hsl(var(--hue-color), 4%, 10%);
-    --text-gradient: linear-gradient(hsl(var(--hue-color), 4%, 24%), hsl(var(--hue-color), 4%, 8%));
     --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
     --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
     

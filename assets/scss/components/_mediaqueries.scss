@@ -86,17 +86,6 @@
         }   
     }
 
-    .discount{
-        &__img{
-            position: initial;
-        }
-
-        &__container{
-            grid-template-columns: repeat(2, 1fr);
-            justify-items: center;
-            align-items: center;
-        }
-    }
 
     .products{
         &__container{
@@ -205,6 +194,10 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    main{
+        padding-bottom: 200px;
+    }
     
     .home{
         &__img{
@@ -224,9 +217,6 @@
         width: 100px;
     }
 
-    .discount__img{
-        width: 350px;
-    }
 
     .footer{
         &__container{

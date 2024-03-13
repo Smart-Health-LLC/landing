@@ -45,3 +45,5 @@ local
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+.parcel-cache

@@ -5,22 +5,11 @@
 /*=============== VARIABLES CSS ===============*/
 $gradient-color-1: #adb1b481;
 $gradient-color-2: #525252cc;
-:root{
+
+
+
+body {
     --header-height: 3rem;
-    
-    /*========== Colors ==========*/
-    --hue-color: 206;
-    
-    --black-color: hsl(var(--hue-color), 4%, 4%);
-    --black-color-alt: hsl(var(--hue-color), 4%, 8%);
-    --title-color: hsl(var(--hue-color), 4%, 95%);
-    --text-color: hsl(var(--hue-color), 4%, 75%);
-    --text-color-light: hsl(var(--hue-color), 4%, 65%);
-    --white-color: #FFF;
-    --body-color: hsl(var(--hue-color), 4%, 6%);
-    --container-color: hsl(var(--hue-color), 4%, 10%);
-    --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
-    --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
     
     /*========== Font and typography ==========*/
     --body-font: "Mulish", sans-serif;
@@ -61,4 +50,52 @@ $gradient-color-2: #525252cc;
     /*========== z index ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;
+}
+
+body {
+
+}
+
+body.dark-theme{
+    /*========== Colors ==========*/
+    --hue-color: 206;
+    
+    --black-color: hsl(var(--hue-color), 4%, 4%);
+    --black-color-alt: hsl(var(--hue-color), 4%, 8%);
+    --title-color: hsl(var(--hue-color), 4%, 95%);
+    --text-color: hsl(var(--hue-color), 4%, 75%);
+    --text-color-light: hsl(var(--hue-color), 4%, 65%);
+    --white-color: #FFF;
+    --body-color: hsl(var(--hue-color), 4%, 6%);
+    --container-color: hsl(var(--hue-color), 4%, 10%);
+    --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
+    --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
+}
+
+@media (prefers-color-scheme: light) {
+  /* defaults to light theme */
+  body {
+
+  }
+  body.dark-theme {
+
+  }
+}
+
+
+
+.light {
+    /*========== Colors ==========*/
+    --hue-color: 206;
+    
+    --black-color: hsl(var(--hue-color), 4%, 4%);
+    --black-color-alt: hsl(var(--hue-color), 4%, 8%);
+    --title-color: hsl(var(--hue-color), 4%, 95%);
+    --text-color: hsl(var(--hue-color), 4%, 75%);
+    --text-color-light: hsl(var(--hue-color), 4%, 65%);
+    --white-color: #FFF;
+    --body-color: hsl(var(--hue-color), 4%, 6%);
+    --container-color: hsl(var(--hue-color), 4%, 10%);
+    --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
+    --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
 }

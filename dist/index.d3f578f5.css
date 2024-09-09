@@ -1,7 +1,7 @@
 @import "https://fonts.googleapis.com/css2?family=Mulish:wght@400..900&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Concert+One&display=swap";
 @import "https://fonts.googleapis.com/css?family=Roboto+Mono:300";
-:root {
+body {
   --header-height: 3rem;
   --hue-color: 206;
   --black-color: hsl(var(--hue-color), 4%, 4%);
@@ -37,7 +37,7 @@
 }
 
 @media screen and (width >= 968px) {
-  :root {
+  body {
     --biggest-font-size: 7.5rem;
     --bigger-font-size: 4.5rem;
     --big-font-size: 4rem;
@@ -47,6 +47,20 @@
     --small-font-size: .875rem;
     --smaller-font-size: .813rem;
   }
+}
+
+.light {
+  --hue-color: 206;
+  --black-color: hsl(var(--hue-color), 4%, 4%);
+  --black-color-alt: hsl(var(--hue-color), 4%, 8%);
+  --title-color: hsl(var(--hue-color), 4%, 95%);
+  --text-color: hsl(var(--hue-color), 4%, 75%);
+  --text-color-light: hsl(var(--hue-color), 4%, 65%);
+  --white-color: #fff;
+  --body-color: hsl(var(--hue-color), 4%, 6%);
+  --container-color: hsl(var(--hue-color), 4%, 10%);
+  --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
+  --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
 }
 
 * {

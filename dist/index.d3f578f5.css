@@ -3,17 +3,6 @@
 @import "https://fonts.googleapis.com/css?family=Roboto+Mono:300";
 body {
   --header-height: 3rem;
-  --hue-color: 206;
-  --black-color: hsl(var(--hue-color), 4%, 4%);
-  --black-color-alt: hsl(var(--hue-color), 4%, 8%);
-  --title-color: hsl(var(--hue-color), 4%, 95%);
-  --text-color: hsl(var(--hue-color), 4%, 75%);
-  --text-color-light: hsl(var(--hue-color), 4%, 65%);
-  --white-color: #fff;
-  --body-color: hsl(var(--hue-color), 4%, 6%);
-  --container-color: hsl(var(--hue-color), 4%, 10%);
-  --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
-  --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
   --body-font: "Mulish", sans-serif;
   --biggest-font-size: 5rem;
   --bigger-font-size: 3.5rem;
@@ -49,7 +38,7 @@ body {
   }
 }
 
-.light {
+body.dark {
   --hue-color: 206;
   --black-color: hsl(var(--hue-color), 4%, 4%);
   --black-color-alt: hsl(var(--hue-color), 4%, 8%);
@@ -61,6 +50,20 @@ body {
   --container-color: hsl(var(--hue-color), 4%, 10%);
   --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
   --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
+}
+
+body.light {
+  --hue-color: 206;
+  --black-color: hsl(var(--hue-color), 4%, 96%);
+  --black-color-alt: hsl(var(--hue-color), 4%, 92%);
+  --title-color: hsl(var(--hue-color), 4%, 5%);
+  --text-color: hsl(var(--hue-color), 4%, 25%);
+  --text-color-light: hsl(var(--hue-color), 4%, 35%);
+  --white-color: #fff;
+  --body-color: hsl(var(--hue-color), 4%, 94%);
+  --container-color: hsl(var(--hue-color), 4%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 4%, 84%);
+  --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 80%);
 }
 
 * {

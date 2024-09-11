@@ -1,101 +1,84 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 $gradient-color-1: #adb1b481;
 $gradient-color-2: #525252cc;
 
-
-
 body {
-    --header-height: 3rem;
-    
-    /*========== Font and typography ==========*/
-    --body-font: "Mulish", sans-serif;
-    
-    --biggest-font-size: 5rem;
-    --bigger-font-size: 3.5rem;
-    --big-font-size: 2.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1.125rem;
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
-    --text-line-height: 2rem;
-    
-    @media screen and (min-width: 968px){
-        --biggest-font-size: 7.5rem;
-        --bigger-font-size: 4.5rem;
-        --big-font-size: 4rem;
-        --h2-font-size: 1.5rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
-        --small-font-size: .875rem;
-        --smaller-font-size: .813rem;
-    }
+  --header-height: 3rem;
 
-    /*========== Font weight ==========*/
-    --font-medium: 500;
-    --font-semi-bold: 600;
+  /*========== Font and typography ==========*/
+  --body-font: "Mulish", sans-serif;
 
-    /*========== Margenes Bottom ==========*/
-    --mb-0-5: .5rem; 
-    --mb-0-75: .75rem; 
-    --mb-1: 1rem; 
-    --mb-1-5: 1.5rem; 
-    --mb-2: 2rem; 
-    --mb-2-5: 2.5rem;
+  --biggest-font-size: 5rem;
+  --bigger-font-size: 3.5rem;
+  --big-font-size: 2.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --text-line-height: 2rem;
 
-    /*========== z index ==========*/
-    --z-tooltip: 10;
-    --z-fixed: 100;
-}
-
-body {
-
-}
-
-body.dark-theme{
-    /*========== Colors ==========*/
-    --hue-color: 206;
-    
-    --black-color: hsl(var(--hue-color), 4%, 4%);
-    --black-color-alt: hsl(var(--hue-color), 4%, 8%);
-    --title-color: hsl(var(--hue-color), 4%, 95%);
-    --text-color: hsl(var(--hue-color), 4%, 75%);
-    --text-color-light: hsl(var(--hue-color), 4%, 65%);
-    --white-color: #FFF;
-    --body-color: hsl(var(--hue-color), 4%, 6%);
-    --container-color: hsl(var(--hue-color), 4%, 10%);
-    --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
-    --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
-}
-
-@media (prefers-color-scheme: light) {
-  /* defaults to light theme */
-  body {
-
+  @media screen and (min-width: 968px) {
+    --biggest-font-size: 7.5rem;
+    --bigger-font-size: 4.5rem;
+    --big-font-size: 4rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
   }
-  body.dark-theme {
 
-  }
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margenes Bottom ==========*/
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
 }
 
+body.dark {
+  --hue-color: 206;
 
+  --black-color: hsl(var(--hue-color), 4%, 4%);
+  --black-color-alt: hsl(var(--hue-color), 4%, 8%);
+  --title-color: hsl(var(--hue-color), 4%, 95%);
+  --text-color: hsl(var(--hue-color), 4%, 75%);
+  --text-color-light: hsl(var(--hue-color), 4%, 65%);
+  --white-color: #fff;
+  --body-color: hsl(var(--hue-color), 4%, 6%);
+  --container-color: hsl(var(--hue-color), 4%, 10%);
+  --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
+  --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
+}
 
-.light {
-    /*========== Colors ==========*/
-    --hue-color: 206;
-    
-    --black-color: hsl(var(--hue-color), 4%, 4%);
-    --black-color-alt: hsl(var(--hue-color), 4%, 8%);
-    --title-color: hsl(var(--hue-color), 4%, 95%);
-    --text-color: hsl(var(--hue-color), 4%, 75%);
-    --text-color-light: hsl(var(--hue-color), 4%, 65%);
-    --white-color: #FFF;
-    --body-color: hsl(var(--hue-color), 4%, 6%);
-    --container-color: hsl(var(--hue-color), 4%, 10%);
-    --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
-    --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
+body.light {
+  --hue-color: 206;
+  --black-color: hsl(var(--hue-color), 4%, 96%); /* Inverted from 4% */
+  --black-color-alt: hsl(var(--hue-color), 4%, 92%); /* Inverted from 8% */
+  --title-color: hsl(var(--hue-color), 4%, 5%); /* Inverted from 95% */
+  --text-color: hsl(var(--hue-color), 4%, 25%); /* Inverted from 75% */
+  --text-color-light: hsl(var(--hue-color), 4%, 35%); /* Inverted from 65% */
+  --white-color: #fff; /* Remains the same */
+  --body-color: hsl(var(--hue-color), 4%, 94%); /* Inverted from 6% */
+  --container-color: hsl(var(--hue-color), 4%, 90%); /* Inverted from 10% */
+  --scroll-thumb-color: hsl(var(--hue-color), 4%, 84%); /* Inverted from 16% */
+  --scroll-thumb-color-alt: hsl(
+    var(--hue-color),
+    4%,
+    80%
+  ); /* Inverted from 20% */
 }

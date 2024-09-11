@@ -1,33 +1,39 @@
-// Select the button
+// default: light
+// if user switched manually: user selected theme
+// the setting is stored in the local storage
 const btn = document.querySelector(".btn-toggle");
-// Check for dark mode preference at the OS level
-const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
-// Get the user's theme preference from local storage, if it's available
-const currentTheme = localStorage.getItem("theme");
-// If the user's preference in localStorage is dark...
-if (currentTheme == "dark") {
-  // ...let's toggle the .dark-theme class on the body
-  document.body.classList.toggle("dark-mode");
-// Otherwise, if the user's preference in localStorage is light...
-} else if (currentTheme == "light") {
-  // ...let's toggle the .light-theme class on the body
-  document.body.classList.toggle("light-mode");
+const lightThemeName = "light";
+const darkThemeName = "dark";
+const themeKeyName = "theme";
+
+let currentTheme = localStorage.getItem(themeKeyName);
+
+// default: light
+if (typeof currentTheme === "undefined") {
+  currentTheme = lightThemeName;
 }
 
-// Listen for a click on the button 
-btn.addEventListener("click", function() {
-  // If the user's OS setting is dark and matches our .dark-mode class...
-  if (prefersDarkScheme.matches) {
-    // ...then toggle the light mode class
-    document.body.classList.toggle("light-mode");
-    // ...but use .dark-mode if the .light-mode class is already on the body,
-    var theme = document.body.classList.contains("light-mode") ? "light" : "dark";
+function toggleTheme() {
+  if (currentTheme == lightThemeName) {
+    // switch to dark
+    document.body.classList.remove(lightThemeName);
+    document.body.classList.add(darkThemeName);
+    currentTheme = darkThemeName;
   } else {
-    // Otherwise, let's do the same thing, but for .dark-mode
-    document.body.classList.toggle("dark-mode");
-    var theme = document.body.classList.contains("dark-mode") ? "dark" : "light";
+    // switch do light
+    document.body.classList.remove(darkThemeName);
+    document.body.classList.add(lightThemeName);
+    currentTheme = lightThemeName;
   }
-  // Finally, let's save the current preference to localStorage to keep using it
-  localStorage.setItem("theme", theme);
+
+  localStorage.setItem(themeKeyName, currentTheme);
+}
+
+toggleTheme();
+
+btn.addEventListener("click", function () {
+  console.log("broo");
+
+  toggleTheme(currentTheme);
 });

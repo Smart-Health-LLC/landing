@@ -475,9 +475,14 @@ main {
 }
 
 .footer__links {
+  color: #6495ed;
   flex-direction: column;
   row-gap: .5rem;
   display: flex;
+}
+
+.footer__links a {
+  color: #6495ed;
 }
 
 .footer__links table {

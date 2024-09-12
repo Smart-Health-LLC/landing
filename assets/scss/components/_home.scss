@@ -60,3 +60,8 @@
         margin-left: var(--mb-0-75);
     }
 }
+
+.row {
+    display: flex;
+    flex-direction: row;
+}

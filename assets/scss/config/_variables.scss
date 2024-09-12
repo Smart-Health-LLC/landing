@@ -45,6 +45,8 @@ body {
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
 
+  --mt-0-75: 0.75rem;
+
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
@@ -72,7 +74,7 @@ body.light {
   --title-color: hsl(var(--hue-color), 4%, 5%); /* Inverted from 95% */
   --text-color: hsl(var(--hue-color), 4%, 25%); /* Inverted from 75% */
   --text-color-light: hsl(var(--hue-color), 4%, 35%); /* Inverted from 65% */
-  --white-color: #fff; /* Remains the same */
+  --white-color: #141414; /* Remains the same */
   --body-color: hsl(var(--hue-color), 4%, 94%); /* Inverted from 6% */
   --container-color: hsl(var(--hue-color), 4%, 90%); /* Inverted from 10% */
   --scroll-thumb-color: hsl(var(--hue-color), 4%, 84%); /* Inverted from 16% */

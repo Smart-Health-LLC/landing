@@ -21,6 +21,7 @@ body {
   --mb-1-5: 1.5rem;
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
+  --mt-0-75: .75rem;
   --z-tooltip: 10;
   --z-fixed: 100;
 }
@@ -59,7 +60,7 @@ body.light {
   --title-color: hsl(var(--hue-color), 4%, 5%);
   --text-color: hsl(var(--hue-color), 4%, 25%);
   --text-color-light: hsl(var(--hue-color), 4%, 35%);
-  --white-color: #fff;
+  --white-color: #141414;
   --body-color: hsl(var(--hue-color), 4%, 94%);
   --container-color: hsl(var(--hue-color), 4%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 4%, 84%);
@@ -220,7 +221,7 @@ main {
 }
 
 .nav__link {
-  color: #0000;
+  color: var(--black-color);
   font-size: var(--h2-font-size);
   text-transform: uppercase;
   font-weight: var(--font-semi-bold);
@@ -328,6 +329,11 @@ main {
   margin-left: var(--mb-0-75);
 }
 
+.row {
+  flex-direction: row;
+  display: flex;
+}
+
 .button {
   background-color: var(--black-color);
   color: var(--white-color);
@@ -353,6 +359,24 @@ main {
 
 .link-disabled {
   pointer-events: none;
+}
+
+.light .button:hover {
+  box-shadow: 0 7px 29px #64646f33;
+}
+
+.theme-toggle {
+  margin-top: var(--mt-0-75);
+  width: 45px;
+}
+
+.dark-icon {
+  filter: contrast(.001);
+  width: 34px;
+}
+
+.light .dark-icon, .dark .light-icon {
+  display: none;
 }
 
 .specs__container {
@@ -531,7 +555,7 @@ main {
 .backlight {
   background-color: #151823;
   width: 79%;
-  height: 94%;
+  height: 92%;
   animation: 10s infinite textColor;
   position: absolute;
   top: 50%;

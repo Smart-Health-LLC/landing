@@ -1,191 +1,215 @@
 <!DOCTYPE html>
-    <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ru">
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/imgs/pit-logo/pit-logo.svg" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== REMIX ICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/imgs/pit-logo/pit-logo.svg" type="image/x-icon">
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/scss/styles.scss">
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-        <title>Ассистент полисна</title>
-    </head>
-    <body class="light">
-        <!--=============== HEADER ===============-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                    <img ondragstart="return false;"  src="assets/imgs/pit-logo/pit-logo.svg" alt="">
-                </a>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/scss/styles.scss">
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Главная</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#specs" class="nav__link">Приложение</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#case" class="nav__link">Для компаний</a>
-                        </li>
-                    </ul>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/theme-toggles@4.10.1/css/classic.min.css">
 
-                    <div class="nav__close" id="nav-close">
-                        <i class="ri-close-line"></i>
-                    </div>
+    <title>Ассистент полисна</title>
+</head>
 
-                    <div class="buttons">
-                        <button id="toggle" class="btn-toggle">toggle</button>
-                    </div>
-                </div>
+<body class="light">
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img ondragstart="return false;" src="assets/imgs/pit-logo/pit-logo.svg" alt="">
+            </a>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-function-line"></i>
-                </div>
-            </nav>
-        </header>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#specs" class="nav__link">Приложение</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#case" class="nav__link">Для компаний</a>
+                    </li>
+                </ul>
 
-        <main class="main">
-            <!--=============== HOME ===============-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div>
-                        <img ondragstart="return false;" ondragstart="return false;" src="assets/imgs/smartwatch-showcase.png" alt="" class="home__img">
-                    </div>
-
-                    <div class="home__data">
-                        <div class="home__header">
-                            <h1 class="home__title">Полисон</h1>
-                            <h2 class="home__subtitle">Вместе с  <img ondragstart="return false;" class="home__subtitle__logo" src="assets/imgs/pit-logo/pit-logo.svg" height="50px" alt=""></h2>
-                        </div>
-
-                        <div class="home__footer">
-                            <h3 class="home__title-description">Полифазный сон?</h3>
-                            <p class="home__description">Распределение длительного ночного сна на более короткие промежутки в течение дня освободит ощутимое количество времени, позволив вам достигать своих целей быстрее. Pit сделает переход на новый режим сна легче и правильно адаптирует его под изменяющиеся планы</p>
-                            <a href="#" class="button button--flex">
-                                <span class="button--flex">
-                                    <i class="ri-code-s-slash-fill button__icon"></i></i><div class="text">В активной разработке</div> 
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--=============== SPACER ===============-->
-            <section class="section">
-                <div class="container"></div>
-            </section>
-
-            <!--=============== APP MOBILE ===============-->
-            <section class="specs section grid" id="specs">
-                <h2 class="section__title section__title text-gradient">Ассистент в вашем смартфоне</h2>
-
-                <div class="specs__container container grid">
-                    <div class="specs__content grid">
-                        <div class="specs__data">
-                            <i class="ri-zzz-fill specs__icon"></i>
-                            <h3 class="specs__title">Статистика</h3>
-                            <span class="specs__subtitle">Прогресс адаптаций,<br>интеллектуальная настройка<br>и не только</span>
-                        </div>
-
-                        <div class="specs__data">
-                            <i class="ri-file-transfer-fill"></i>
-                            <h3 class="specs__title">Синхронизация данных</h3>
-                            <span class="specs__subtitle">Без ограничений на Pit Can<br>или ручной экспорт</span>
-                        </div>
-
-                        <div class="specs__data">
-                            <i class="ri-hotel-bed-fill specs__icon"></i>
-                            <h3 class="specs__title">Надежность</h3>
-                            <span class="specs__subtitle">Алгоритм для вашего<br>полифазного сна</span>
-                        </div>
-
-                        <div class="specs__data">
-                            <i class="ri-smartphone-line specs__icon"></i>
-                            <h3 class="specs__title">Платформа</h3>
-                            <span class="specs__subtitle">Andriod, IOS, Web</span>
-                        </div>
-                    </div>
-
-                    <div>
-                        <img ondragstart="return false;" src="assets/imgs/smartphone-showcase.png" alt="" class="specs__img">
-                    </div>
-                </div>
-            </section>
-
-            <!--=============== APP DESKTOP ===============-->
-            <section class="case section grid" id="case">
-                <h2 class="section__title section__title text-gradient">Панель для<br>компаний</h2>
-
-                <div class="case__container container grid">
-                    <div class="case__data">
-                        <p class="case__description">Имейте в распоряжении статистику времени бодрствования и сна сотрудников и формируйте график работы сотрудников, раскрывая их максимальную продуктивность</p>
-                    </div>
-
-                    <div class="pos-r reveal-top">
-                        <div class="backlight"></div>
-                        <img ondragstart="return false;" src="assets/imgs/laptop-showcase.png" alt="" class="case__img ">
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!--=============== FOOTER ===============-->
-        <footer class="footer section">
-            <div class="footer__container container">
-                <a href="#" class="footer__logo">
-                    <img ondragstart="return false;" src="assets/imgs/smart-health-logo/smartlife_color_transparent_bg_lableless.svg" height="150px" alt="">
-                    <div class="footer__logo__label"><span class="color-blue-logo">SMART</span>&nbsp<span class="color-red-logo">HEALTH</span></div>
-                    <div class="footer__link link-disabled">Взламываем сон с 2023 года</div>
-                </a>
-
-                <div class="footer__content">
-                    <ul class="footer__links">
-                        <table>
-                            <tr>
-                                <td class="footer__links__category">Телефон</td>
-                                <td class="pr-10"><a href="tel:+79641274937">8 (964) 127-49-37</a></td>
-                            </tr>
-                            <tr>
-                                <td class="footer__links__category">Почта</td>
-                                <td class="pr-10"><a href="mailto:smarthealth@onmail.com">smarthealth@onmail.com</a></td>
-                            </tr>
-<tr>
-                                <td class="footer__links__category">ИНН</td>
-                                <td class="pr-10">3812998740</td>
-                            </tr>
-                            <tr>
-                                <td class="footer__links__category">ОГРН</td>
-                                <td class="pr-10">1233800020420</td>
-                            </tr>
-                        </table>
-                    </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
                 </div>
             </div>
 
-            <p class="footer__copy">
-                <a href="javascript:void()" target="_blank" class="footer__copy-link link-disabled">&#169; ООО Умные решения. Права защищены.</a>
-            </p>
-        </footer>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+    </header>
 
-        <!--=============== SCROLL UP ===============-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="ri-arrow-up-s-line scrollup__icon"></i>
-        </a>
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div>
+                    <img ondragstart="return false;" ondragstart="return false;"
+                        src="assets/imgs/smartwatch-showcase.png" alt="" class="home__img">
+                </div>
 
-        <!--=============== SCROLL REVEAL ===============-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+                <div class="home__data">
+                    <div class="home__header">
+                        <h1 class="home__title">Полисон</h1>
+                        <h2 class="home__subtitle">Вместе с <img ondragstart="return false;"
+                                class="home__subtitle__logo" src="assets/imgs/pit-logo/pit-logo.svg" height="50px"
+                                alt=""></h2>
+                    </div>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/scroll-and-interact.js"></script>
-        <script src="assets/js/themes.js"></script>
-        <script src="assets/js/text-scrumble.js"></script>
-    </body>
+                    <div class="home__footer">
+                        <h3 class="home__title-description">Полифазный сон?</h3>
+                        <p class="home__description">Распределение длительного ночного сна на более короткие промежутки
+                            в течение дня освободит ощутимое количество времени, позволив вам достигать своих целей
+                            быстрее. Pit сделает переход на новый режим сна легче и правильно адаптирует его под
+                            изменяющиеся планы</p>
+
+
+                            <a href="#" class="button button--flex">
+                                <span class="button--flex">
+                                    <i class="ri-code-s-slash-fill button__icon"></i></i>
+                                    <div class="text">На стадии тестирования</div>
+                                </span>
+                            </a>
+
+                            <div class="theme-toggle" id="toggle-theme" title="Toggle theme">
+                                <img class="dark-icon" src="/assets/imgs/icons/dark-mode-icon.svg" />
+                                <img class="light-icon" src="/assets/imgs/icons/light-mode-icon.svg" />
+                            </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SPACER ===============-->
+        <section class="section">
+            <div class="container"></div>
+        </section>
+
+        <!--=============== APP MOBILE ===============-->
+        <section class="specs section grid" id="specs">
+            <h2 class="section__title section__title text-gradient">Ассистент в вашем смартфоне</h2>
+
+            <div class="specs__container container grid">
+                <div class="specs__content grid">
+                    <div class="specs__data">
+                        <i class="ri-zzz-fill specs__icon"></i>
+                        <h3 class="specs__title">Статистика</h3>
+                        <span class="specs__subtitle">Прогресс адаптаций,<br>интеллектуальная настройка<br>и не
+                            только</span>
+                    </div>
+
+                    <div class="specs__data">
+                        <i class="ri-file-transfer-fill"></i>
+                        <h3 class="specs__title">Синхронизация данных</h3>
+                        <span class="specs__subtitle">Без ограничений на Pit Can<br>или ручной экспорт</span>
+                    </div>
+
+                    <div class="specs__data">
+                        <i class="ri-hotel-bed-fill specs__icon"></i>
+                        <h3 class="specs__title">Надежность</h3>
+                        <span class="specs__subtitle">Алгоритм для вашего<br>полифазного сна</span>
+                    </div>
+
+                    <div class="specs__data">
+                        <i class="ri-smartphone-line specs__icon"></i>
+                        <h3 class="specs__title">Доступность</h3>
+                        <span class="specs__subtitle">Andriod, IOS, Web</span>
+                    </div>
+                </div>
+
+                <div>
+                    <img ondragstart="return false;" src="assets/imgs/smartphone-showcase.png" alt=""
+                        class="specs__img">
+                </div>
+            </div>
+        </section>
+
+        <!--=============== APP DESKTOP ===============-->
+        <section class="case section grid" id="case">
+            <h2 class="section__title section__title text-gradient">Панель для<br>компаний</h2>
+
+            <div class="case__container container grid">
+                <div class="case__data">
+                    <p class="case__description">Имейте в распоряжении статистику времени бодрствования и сна
+                        сотрудников и формируйте график работы сотрудников, раскрывая их максимальную продуктивность</p>
+                </div>
+
+                <div class="pos-r reveal-top">
+                    <div class="backlight"></div>
+                    <img ondragstart="return false;" src="assets/imgs/laptop-showcase.png" alt="" class="case__img ">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section">
+        <div class="footer__container container">
+            <a href="#" class="footer__logo">
+                <img ondragstart="return false;"
+                    src="assets/imgs/smart-health-logo/smartlife_color_transparent_bg_lableless.svg" height="150px"
+                    alt="">
+                <div class="footer__logo__label"><span class="color-blue-logo">SMART</span>&nbsp<span
+                        class="color-red-logo">HEALTH</span></div>
+                <div class="footer__link link-disabled">Взламываем сон с 2023 года</div>
+            </a>
+
+            <div class="footer__content">
+                <ul class="footer__links">
+                    <table>
+                        <tr>
+                            <td class="footer__links__category">Телефон</td>
+                            <td class="pr-10"><a href="tel:+79641274937">+7 (964) 127-49-37</a></td>
+                        </tr>
+                        <tr>
+                            <td class="footer__links__category">Почта</td>
+                            <td class="pr-10"><a href="mailto:smarthealth@onmail.com">smarthealth@onmail.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="footer__links__category">ИНН</td>
+                            <td class="pr-10">3812998740</td>
+                        </tr>
+                        <tr>
+                            <td class="footer__links__category">ОГРН</td>
+                            <td class="pr-10">1233800020420</td>
+                        </tr>
+                    </table>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer__copy">
+            <a href="javascript:void()" target="_blank" class="footer__copy-link link-disabled">&#169; ООО Умные
+                решения. Права защищены.</a>
+        </p>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line scrollup__icon"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--=============== JS ===============-->
+    <script src="assets/js/scroll-and-interact.js"></script>
+    <script src="assets/js/themes.js"></script>
+    <script src="assets/js/text-scrumble.js"></script>
+</body>
+
 </html>

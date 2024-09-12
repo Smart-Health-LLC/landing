@@ -25,3 +25,25 @@
 .link-disabled {
     pointer-events: none;
 }
+
+.light .button:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.theme-toggle {
+    margin-top: var(--mt-0-75);
+    width: 45px;
+}
+
+.dark-icon{
+    filter: contrast(0.001);
+    width: 34px;
+}
+
+.light .dark-icon {
+    display: none;
+}
+
+.dark .light-icon {
+    display: none;
+}

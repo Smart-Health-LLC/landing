@@ -1,7 +1,7 @@
 // default: light
 // if user switched manually: user selected theme
 // the setting is stored in the local storage
-const btn = document.querySelector(".btn-toggle");
+const btn = document.querySelector("#toggle-theme");
 const lightThemeName = "light";
 const darkThemeName = "dark";
 const themeKeyName = "theme";

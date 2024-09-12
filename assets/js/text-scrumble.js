@@ -58,7 +58,9 @@ class TextScramble {
 
 
 const phrases = [
-  "В активной разработке"
+  "В активной разработке",
+  "На последней стадии тестирования",
+  "Релиз близок"
 ]
 
 const el = document.querySelector('.text')

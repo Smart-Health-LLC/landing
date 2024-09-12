@@ -65,3 +65,8 @@
     display: flex;
     flex-direction: row;
 }
+
+.light .home__subtitle__logo,
+.light .nav__logo img {
+    filter: contrast(0.5);
+}

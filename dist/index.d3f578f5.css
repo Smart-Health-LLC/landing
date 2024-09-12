@@ -334,6 +334,10 @@ main {
   display: flex;
 }
 
+.light .home__subtitle__logo, .light .nav__logo img {
+  filter: contrast(.5);
+}
+
 .button {
   background-color: var(--black-color);
   color: var(--white-color);

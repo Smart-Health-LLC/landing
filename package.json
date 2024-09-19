@@ -5,15 +5,27 @@
   "author": "volard <kirillzhilenkov@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel index.html --open",
+    "startwp": "webpack serve --mode development",
+    "buildwp": "webpack --mode production",
+    "dev": "parcel serve index.html",
     "build": "parcel build index.html --public-url ./",
     "deploy": "run build ; gh-pages -d dist",
     "start": "live-server ./dist/ --verbose; run dev"
   },
   "devDependencies": {
-    "@parcel/compressor-gzip": "^2.12.0",
+    "@parcel/compressor-gzip": "2.12.0",
     "@parcel/transformer-sass": "2.12.0",
-    "live-server": "^1.2.2",
-    "parcel": "^2.12.0"
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "live-server": "1.2.2",
+    "mini-css-extract-plugin": "^2.9.1",
+    "parcel": "2.12.0",
+    "sass": "^1.78.0",
+    "sass-loader": "^16.0.1",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
   }
 }

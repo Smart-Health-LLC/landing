@@ -130,7 +130,9 @@ class TextScramble {
     }
 }
 const phrases = [
-    "\u0412 \u0430\u043A\u0442\u0438\u0432\u043D\u043E\u0439 \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0435"
+    "\u0412 \u0430\u043A\u0442\u0438\u0432\u043D\u043E\u0439 \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0435",
+    "\u041D\u0430 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0439 \u0441\u0442\u0430\u0434\u0438\u0438 \u0442\u0435\u0441\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F",
+    "\u0420\u0435\u043B\u0438\u0437 \u0431\u043B\u0438\u0437\u043E\u043A"
 ];
 const el = document.querySelector(".text");
 const fx = new TextScramble(el);
@@ -142,5 +144,34 @@ const next = ()=>{
     counter = (counter + 1) % phrases.length;
 };
 next();
+// default: light
+// if user switched manually: user selected theme
+// the setting is stored in the local storage
+const btn = document.querySelector("#toggle-theme");
+const lightThemeName = "light";
+const darkThemeName = "dark";
+const themeKeyName = "theme";
+let currentTheme = localStorage.getItem(themeKeyName);
+// default: light
+if (typeof currentTheme === "undefined") currentTheme = lightThemeName;
+function toggleTheme() {
+    if (currentTheme == lightThemeName) {
+        // switch to dark
+        document.body.classList.remove(lightThemeName);
+        document.body.classList.add(darkThemeName);
+        currentTheme = darkThemeName;
+    } else {
+        // switch do light
+        document.body.classList.remove(darkThemeName);
+        document.body.classList.add(lightThemeName);
+        currentTheme = lightThemeName;
+    }
+    localStorage.setItem(themeKeyName, currentTheme);
+}
+toggleTheme();
+btn.addEventListener("click", function() {
+    console.log("broo");
+    toggleTheme(currentTheme);
+});
 
-//# sourceMappingURL=index.fc2f7771.js.map
+//# sourceMappingURL=index.ddbb3570.js.map

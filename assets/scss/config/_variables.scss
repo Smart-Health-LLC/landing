@@ -22,16 +22,6 @@ body {
   --smaller-font-size: 0.75rem;
   --text-line-height: 2rem;
 
-  @media screen and (min-width: 968px) {
-    --biggest-font-size: 7.5rem;
-    --bigger-font-size: 4.5rem;
-    --big-font-size: 4rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: 0.875rem;
-    --smaller-font-size: 0.813rem;
-  }
 
   /*========== Font weight ==========*/
   --font-medium: 500;
@@ -50,6 +40,17 @@ body {
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
+
+  @media screen and (min-width: 968px) {
+    --biggest-font-size: 7.5rem;
+    --bigger-font-size: 4.5rem;
+    --big-font-size: 4rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
 }
 
 body.dark {

@@ -279,12 +279,12 @@ main {
 }
 
 .home__title {
-  color: #0000;
-  background: -webkit-linear-gradient(left, hsl(var(--hue-color), 4%, 38%), hsl(var(--hue-color), 4%, 14%), hsl(var(--hue-color), 4%, 38%));
-  -webkit-text-fill-color: transparent;
   font-weight: 800;
   line-height: 6rem;
   font-size: var(--biggest-font-size);
+  color: #8d7d7d;
+  background: -webkit-linear-gradient(left, hsl(var(--hue-color), 4%, 38%), hsl(var(--hue-color), 4%, 14%), hsl(var(--hue-color), 4%, 38%));
+  -webkit-text-fill-color: transparent;
   background-size: 1600px 200px;
   background-clip: text;
   animation-name: animationgradienttitle;
